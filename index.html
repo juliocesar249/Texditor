@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Texditor - Editor de Texto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="header" title="Texditor">Texditor</h1>
+            <h2 class="header" title="Crie, Escreva e Edite seus textos aqui!">Crie, Escreva e Edite seus textos aqui!</h2>
+        </header>
+        <main>
+            <div class="container">
+                <div class="formatPainel">
+                    <div class="item item1" id="boldText" title="Negrito" onclick="boldingText()">B</div>
+                    <div class="item item2" id="italicText" title="Itálico" onclick="inItalicText()">I</div>
+                    <div class="item item3" id="sublimeText" title="Sublinhado" onclick="sublimingText()">S</div>
+                    <div class="item item4" id="sizeText" title="Tamanho da fonte" >
+                        <input type="number" class="size" id="size" min="1" max="200" onclick="sizingText()">
+                    </div>
+                    <div class="item item5" id="fontsText" title="Fontes">
+                        <select id="fonts" onclick="stylingText()">
+                            <option value="0" selected>Arial</option>
+                            <option value="1">Baskerville</option>
+                            <option value="2">Calibri</option>
+                            <option value="3">Cambria</option>
+                            <option value="4">Candara</option>
+                            <option value="5">Consolas</option>
+                            <option value="6">Courier</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="text">
+                    <textarea id="text" cols="50" rows="33" style="resize: none;"></textarea>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin-top: 50px;
+    background-color: antiquewhite;
+}
+
+.header {
+    cursor: default;
+}
+
+h1 {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(231, 208, 0);
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(253, 0, 0, 0.336);
+}
+
+.container {
+    margin-top: 50px;
+    border-radius: 5px;
+    display: inline-block;
+    background: lightgray;
+    width: 390px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid;
+}
+
+.formatPainel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.item {
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    background: lightgray;
+    user-select: none;
+}
+
+#boldText:hover, #italicText:hover, #sublimeText:hover {
+    filter: brightness(1.1);
+}
+
+#boldText {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#italicText {
+    font-style: italic;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#sublimeText {
+    text-decoration: underline;
+}
+
+.sublime {
+    text-decoration: underline;
+}
+
+#size {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    user-select:auto;
+}
+
+.item5 {
+    padding: 0;
+}
+
+#fonts {
+    border-radius: 2px;
+    border-width: 0px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+option[value=0] {
+    font-family: Arial;
+}
+
+option[value=1] {
+    font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+}
+
+#text {
+    outline: none;
+    border: none;
+    font-family: Arial;
+    width: 370px;
+    height: 498px;
+    padding: 2px;
+}
