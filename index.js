@@ -36,7 +36,7 @@ function sublimingText() {
 }
 
 function sizingText() {
-    textBox.style.fontSize = sizeText.value+"pt";
+    textBox.style.fontSize = sizeText.value + "pt";
 }
 
 function stylingText() {
@@ -70,20 +70,18 @@ function stylingText() {
 
 sizeText.addEventListener('keydown', function (event) {
     const key = event.key;
-    const code = event.keyCode;
-    console.log(`Key: ${key}, Code ${code}`);
     
     if(key == 'ArrowUp') {
         if (Number(sizeText.value) < 200) {
             sizeText.value++;
-        textBox.style.fontSize = sizeText.value+'pt';
+            textBox.style.fontSize = sizeText.value+'pt';
         }
     }
 
     if(key == 'ArrowDown') {
         if(Number(sizeText.value) > 1) {
             sizeText.value--;
-            textBox.style.fontSize = sizeText.value+'pt';
+            textBox.style.fontSize = Number(sizeText.value)+'pt';
         }
     }
 });
